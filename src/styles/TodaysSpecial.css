@@ -1,0 +1,143 @@
+.specials-top-container {
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 40px;
+}
+
+.specials-top-container h1 {
+  letter-spacing: 1px;
+  font-size: 8vw;
+}
+
+.specials-top-container p {
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+.special-dishes-list {
+  padding: 30px 30px;
+  padding-bottom: 20px;
+  color: white;
+  background-color: #143642;
+  font-size: 15px;
+  border-bottom: solid 1px white;
+  cursor: pointer;
+}
+
+
+.special-dishes-list h2 {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-out;
+}
+
+.special-dishes-list:hover h2 {
+  color: #a97959;
+  transition: color 0.3s ease;
+
+}
+
+.special-dish-price {
+  color: #a97959;
+  font-weight: 700;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.types-of-food {
+  color: #ffffffad;
+  margin-top: 5px;
+}
+
+@media (min-width: 720px) {
+  .todays-specials-container {
+    display: grid;
+    grid-template-columns: 1fr 0.91fr;
+    min-height: 70vh;
+  }
+
+  .specials-top-container {
+    text-align: left;
+    padding: 40px;
+    border-top: none;
+    border: 17px solid #f4efeb;
+  }
+
+  .todays-special-dishes-container {
+    max-width: 60%;
+    width: 100%;
+  }
+
+  .todays-special-img {
+    background-image: url(../assets/bg-10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+    border-left: 0px;
+    border: 17px solid #f4efeb;
+    border-left: none;
+  }
+}
+
+@media (min-width: 1080px) {
+  .todays-specials-container {
+    grid-template-columns: 0.519fr 1fr;
+  }
+
+  .special-dish-wrapper {
+    display: grid;
+    grid-template-columns: auto 0.95fr;
+    margin-right: 30px;
+    align-items: center;
+  }
+
+  .special-dishes-list h2 {
+    width: fit-content;
+  }
+
+  .todays-special-img {
+    border-top: none;
+  }
+
+  .todays-special-dishes-container {
+    max-width: 48%;
+  }
+
+  .special-dishes-list {
+    border: none;
+    position: relative;
+    padding: 30px 60px;
+  }
+
+  .special-dish-price {
+    position: absolute;
+    right: 40px;
+    top: 25px;
+  }
+
+  .specials-top-container {
+    text-align: left;
+    padding: 40px;
+    border-top: none;
+  }
+
+  .specials-top-container h1 {
+    font-size: 5.4vw;
+    letter-spacing: 5px;
+    line-height: 5.4vw;
+  }
+
+  .specials-top-container p {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .todays-special-dishes-container {
+    max-width: 48.52%;
+
+  }
+}

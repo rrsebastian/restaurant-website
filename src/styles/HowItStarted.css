@@ -1,0 +1,83 @@
+ .timeline-section-container-left,
+ .timeline-section-container-right {
+   background-color: white;
+   padding: 20px;
+   padding-bottom: 40px;
+   width: 90%;
+   margin: 20px 0px;
+   border-radius: 5px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ }
+
+ .timeline-section-container-left h2,
+ .timeline-section-container-right h2 {
+   font-family: "Noto Sans";
+   font-size: 14px;
+   color: #A97959;
+
+ }
+
+ .timeline-section-container-left h1,
+ .timeline-section-container-right h1 {
+   font-size: 22px;
+   letter-spacing: 2px;
+   margin-top: 5px;
+ }
+
+ .timeline-section-container-left p,
+ .timeline-section-container-right p {
+   line-height: 25px;
+   font-size: 14px;
+ }
+
+ @media (min-width: 1080px) {
+
+
+   .timeline-section-container-left,
+   .timeline-section-container-right {
+     width: 45%;
+     padding: 40px 50px;
+     margin: 10px 0px;
+   }
+
+   .timeline-section-container-left {
+     transform: translateX(-60.5%);
+     text-align: end;
+     transition: all 0.3s ease-out;
+   }
+
+   .timeline-section-container-right {
+     transform: translateX(60%);
+     transition: all 0.3s ease-out;
+   }
+
+   .timeline-section-container-left h2,
+   .timeline-section-container-right h2 {
+     font-size: 15px;
+   }
+
+   .timeline-section-container-left:hover {
+     transform: translate(-60.5%, -15px);
+     transition: all 0.3s ease;
+   }
+
+   .timeline-section-container-right:hover {
+     transform: translate(60%, -15px);
+     transition: all 0.3s ease;
+   }
+ }
+
+
+
+ @media (min-width: 1500px) {
+
+
+   .timeline-section-container-right {
+     transform: translate(52%);
+   }
+
+   .timeline-section-container-right:hover {
+     transform: translate(52%, -15px);
+     transition: all 0.3s ease;
+   }
+ }

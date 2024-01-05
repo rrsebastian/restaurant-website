@@ -1,0 +1,145 @@
+.navbar-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #143642;
+  position: relative;
+  align-items: center;
+  padding: 10px 30px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+
+.show-list-container,
+.hide-list-container {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+}
+
+.show-list-container {
+  left: 0px;
+  transition: all 0.4s;
+}
+
+.hide-list-container {
+  transition: all 0.8s;
+  left: -1000px;
+}
+
+.list-items {
+  font-size: 20px;
+  position: absolute;
+  bottom: -332px;
+  width: 100%;
+  cursor: pointer;
+  background-color: white;
+}
+
+.list-items li {
+  list-style: none;
+  padding: 25px 20px;
+  border-bottom: 1px solid lightgray;
+  font-family: 'Bebas Neue';
+  transition: color 0.3s ease-out;
+
+}
+
+.list-items li:hover {
+  color: #a97959;
+  transition: color 0.3s ease;
+}
+
+
+
+.hamburger-icon-close-btn {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  background-color: #a97959;
+
+}
+
+.hamburger-close-icon {
+  fill: white;
+  font-size: 16px;
+}
+
+.reservation-btn-container {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.reservation-img {
+  padding: 10px;
+  border: none;
+  background-color: #a97959;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.reservation-btn {
+  padding: 10px;
+  background-color: #a97959;
+  border: none;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.menu-book-img {
+  font-size: 19px;
+}
+
+.active-link {
+  color: #a97959;
+}
+
+
+@media (min-width: 1080px) {
+  .navbar-container {
+    place-items: center;
+  }
+
+  .reservation-btn-container {
+    width: 100%;
+  }
+
+  .show-list-container,
+  .hide-list-container {
+    position: initial;
+    transform: translateX(0px);
+  }
+
+  .list-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    left: 0px;
+    position: initial;
+    background-color: transparent;
+    width: 100%;
+    place-items: center;
+    max-width: 400px;
+  }
+
+  .list-items li {
+    border-bottom: none;
+    padding: 0px;
+
+
+  }
+
+
+  .hamburger-icon-close-container {
+    display: none;
+  }
+}

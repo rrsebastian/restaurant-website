@@ -1,0 +1,105 @@
+.drop-a-message-container,
+.drop-a-message-confirmation {
+  background-color: #143642;
+  text-align: center;
+  padding: 50px 30px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.drop-a-message-container h2 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.drop-a-message-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drop-a-message-container input,
+textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 20px;
+  color: white;
+  font-size: 15px;
+  font-family: "Noto Sans";
+  cursor: pointer;
+}
+
+.drop-a-message-container textarea:focus {
+  outline: none;
+}
+
+.drop-a-message-container input::placeholder,
+textarea::placeholder {
+  color: white;
+  font-size: 15px;
+  font-family: "Noto Sans";
+}
+
+.drop-a-message-container button {
+  margin-top: 50px;
+  padding: 20px 40px;
+  font-size: 19px;
+  background-color: #a97959;
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.drop-us-a-msg {
+  padding-bottom: 25px;
+  color: white;
+  font-size: 36px;
+}
+
+.drop-a-message-confirmation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.drop-a-message-confirmation p {
+  color: white;
+}
+
+.drop-a-message-container .error-placeholder::placeholder {
+  color: #FF7F7F;
+}
+
+@media (min-width: 720px) {
+  .drop-a-message-container {
+    margin-top: 0px;
+    border-left: 17px solid #f4efeb;
+  }
+
+  .drop-a-message-container h2 {
+    font-size: 45px;
+  }
+
+  .drop-a-message-container form {
+    margin-top: 20px;
+  }
+
+  .drop-a-message-container button {
+    position: absolute;
+    bottom: 50px;
+  }
+
+  .drop-us-a-msg {
+    font-size: 45px;
+  }
+
+  .drop-a-message-confirmation p {
+    font-size: 17px;
+  }
+
+  @media (min-width: 1080px) {}
+}

@@ -1,0 +1,161 @@
+.timeline-container {
+  padding: 30px;
+  padding-top: 60px;
+  background-color: #f4efeb;
+  position: relative;
+}
+
+.timeline-top-wrapper h2 {
+  font-size: 33px;
+  color: #A97959;
+  font-family: 'Alex Brush', Arial;
+  font-weight: 400;
+}
+
+.timeline-top-wrapper h1 {
+  font-size: 42px;
+  line-height: 40px;
+  margin-top: 10px;
+}
+
+.timeline-top-wrapper {
+  border-bottom: 1px solid #143642;
+  padding-bottom: 35px;
+}
+
+.timeline-bottom-container {
+  padding-top: 35px;
+}
+
+.timeline-bottom-container h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  grid-column: 2;
+}
+
+.timeline-bottom-container {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  position: relative;
+}
+
+.howitstarted-wrapper {
+  grid-column: 2;
+}
+
+.line-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 84%;
+  margin-top: 100px;
+  grid-row: 2;
+}
+
+.line {
+  border-left: 2px solid #A97959;
+  width: fit-content;
+  height: 99%;
+}
+
+.circle-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(-9px);
+}
+
+.circle-img {
+  fill: #A97959;
+}
+
+
+@media (min-width: 1080px) {
+
+  .timeline-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    padding: 100px 50px;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .timeline-bottom-container h3 {
+    border-top: 1px solid black;
+    transform: translate(-102%, 100px);
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  .timeline-bottom-container {
+    display: initial;
+  }
+
+  .line-wrapper {
+    position: absolute;
+    right: 49.5%;
+    height: 80%;
+    top: 130px;
+  }
+
+  .circle-wrapper {
+    transform: translateX(0px);
+  }
+
+  .timeline-top-wrapper h1 {
+    font-size: 5.6vw;
+    line-height: 6vw;
+    letter-spacing: 0.6vw;
+  }
+
+  .timeline-top-wrapper h2 {
+    font-size: 2.8vw;
+  }
+
+  .timeline-wrapper {
+    grid-column: 2;
+  }
+
+  .timeline-top-wrapper {
+    border-bottom: none;
+    padding: 0px;
+  }
+
+  .timeline-bottom-container {
+    position: relative;
+  }
+
+  .howitstarted-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .line {
+    position: absolute;
+  }
+
+
+
+}
+
+@media (min-width: 1500px) {
+  .timeline-container {
+    display: grid;
+    grid-template-columns: 0.56fr 1fr;
+    padding: 150px 0px;
+  }
+
+  .timeline-top-wrapper h1 {
+    font-size: 4.9vw;
+    line-height: 5vw;
+    letter-spacing: 0.5vw;
+  }
+
+  .line-wrapper {
+    position: absolute;
+    top: 100px;
+    height: 77%;
+    right: 51.5%;
+  }
+
+}

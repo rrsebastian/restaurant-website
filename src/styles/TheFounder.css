@@ -1,0 +1,137 @@
+.the-founder-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.the-founder-top-container {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #a97959;
+
+}
+
+.the-founder-top-container h2 {
+  color: #a97959;
+  font-size: 21px;
+}
+
+.the-founder-top-container h1 {
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 42px;
+  margin: 20px 0px;
+}
+
+.the-founder-top-container p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.the-founder-bottom-container {
+  padding-left: 45px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.the-founder-bottom-container em {
+  font-size: 15px;
+  color: #a97959;
+}
+
+.signature-img {
+  position: absolute;
+  left: 0px;
+  top: 70px;
+  width: 85px;
+  opacity: 0.4;
+}
+
+.founder-img {
+  width: 300px;
+  z-index: 10;
+
+}
+
+.the-founder-house-img {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .the-founder-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    border: solid lightgray 1px;
+  }
+
+
+  .founder-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .img-container {
+    width: 100%;
+    height: 100%;
+    border: 17px solid #f4efeb;
+    border-right: none;
+
+  }
+
+
+  .the-founder-text-container {
+    padding: 55px;
+    max-width: 400px;
+  }
+
+  .the-founder-top-container h1 {
+    font-size: 5vw;
+    letter-spacing: 0.7vw;
+  }
+}
+
+
+@media (min-width: 1080px) {
+  .the-founder-container {
+    grid-template-columns: 0.6fr 0.6fr 0.2fr;
+  }
+
+
+  .the-founder-house-img {
+    display: initial;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-left: none;
+    border: 17px solid #f4efeb;
+  }
+
+  .the-founder-house-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b8784e;
+    z-index: 1;
+    opacity: 0.2;
+  }
+
+  .the-founder-house-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1420px) {
+  .the-founder-container {
+    grid-template-columns: 0.6fr 0.6fr 0.5fr;
+
+  }
+}

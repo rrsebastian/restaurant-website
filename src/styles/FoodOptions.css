@@ -1,0 +1,122 @@
+.dish-container {
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.dish-container img {
+  border-radius: 50%;
+}
+
+.dish-container h1 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #a97959;
+  margin-top: 10px;
+  transition: filter 0.3s ease-out;
+  cursor: pointer;
+}
+
+.dish-container h1:hover {
+
+  filter: brightness(0.7);
+  transition: filter 0.3s ease;
+}
+
+.dish-container-text {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.dish-container .dish-price {
+  font-size: 19px;
+  letter-spacing: 2px;
+  font-family: 'Bebas Neue';
+}
+
+.dish-price {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.switch-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.switch-container h2 {
+  letter-spacing: 1px;
+  font-size: 28px;
+}
+
+@media (min-width: 720px) {
+  .food-option-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .dish-container {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    align-items: center;
+    text-align: left;
+    padding: 10px 20px;
+  }
+
+  .dish-container-info {
+    margin-left: 20px;
+  }
+
+  .switch-container h2 {
+    font-size: 33px;
+  }
+
+  .dish-container h1 {
+    margin: 0px;
+    margin-right: 20px;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .dish-container-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+  }
+
+  .dish-price {
+    position: initial;
+    text-align: right;
+    margin-left: 20px;
+  }
+
+  .dish-container-text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .food-option-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .switch-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+}
+
+@media (min-width: 1210px) {
+
+  .dish-price {
+    text-align: center;
+  }
+}

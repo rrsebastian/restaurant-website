@@ -1,0 +1,171 @@
+.our-history-container {
+  position: relative;
+  background: url(../assets/bg-0002.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #112d38;
+  font-family: 'Bebas Neue';
+  padding: 60px 30px;
+}
+
+
+.our-history-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #b8784e;
+  z-index: 1;
+  opacity: 0.2;
+}
+
+.our-history-container h1 {
+  font-size: 8vw;
+  font-weight: 400;
+}
+
+.our-history-headers h2 {
+  font-family: 'Alex Brush';
+  font-size: 33px;
+  font-weight: 400;
+
+}
+
+.our-history-headers {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #143642;
+}
+
+.our-history-text,
+.our-history-headers,
+.history-btn {
+  position: relative;
+  opacity: 1;
+  z-index: 5;
+}
+
+.our-history-text h3 {
+  font-size: 22px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.our-history-text p {
+  margin-top: 20px;
+  font-size: 32px;
+}
+
+.history-btn {
+  padding: 20px 30px;
+  font-size: 17px;
+  font-family: 'Bebas Neue';
+  background-color: #a97959;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media (min-width: 720px) {
+  .our-history-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0px;
+  }
+
+  .our-history-headers {
+    border-bottom: none;
+  }
+
+  .our-history-headers h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+
+  .our-history-headers h2 {
+    font-size: 40px;
+  }
+
+  .our-history-text {
+    max-width: 890px;
+    position: relative;
+  }
+
+  .our-history-text p {
+    font-size: 30px;
+  }
+
+
+  .our-history-text,
+  .our-history-headers {
+    position: initial;
+  }
+
+  .history-btn {
+    width: 170px
+  }
+
+  .our-history-wrapper {
+    max-width: 80%;
+    padding-left: 19%;
+    width: 100%;
+  }
+
+  .our-history-text h3 {
+    font-size: 18px;
+    position: absolute;
+    left: 40px;
+    border-top: 1px solid black;
+    width: 22.5%;
+    margin-top: 11.5px;
+    padding-top: 20px;
+  }
+
+}
+
+
+@media (min-width: 1080px) {
+  .our-history-container {
+    min-height: 82vh;
+  }
+
+
+  .our-history-headers h1 {
+    font-size: 5vw;
+    letter-spacing: 7px;
+  }
+
+  .our-history-headers h2 {
+    font-size: 3vw;
+  }
+
+
+  .our-history-text p {
+    font-size: 2vw;
+    line-height: 2.5vw;
+  }
+
+  .our-history-wrapper {
+    max-width: 70%;
+  }
+
+  .our-history-text h3 {
+    font-size: 2vw;
+    left: 50px;
+    width: 28.5%;
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .our-history-text h3 {
+    width: 30%;
+    margin-top: 16px;
+  }
+}
