@@ -3,6 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
 }
 
 .hero-container {
