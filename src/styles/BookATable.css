@@ -11,6 +11,7 @@
   text-align: center;
   padding: 30px;
   padding-top: 130px;
+  -webkit-background-attachment: scroll;
 }
 
 .reservations-container h1,
