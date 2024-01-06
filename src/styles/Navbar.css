@@ -20,12 +20,12 @@
 
 .show-list-container {
   left: 0px;
-  transition: all 0.4s;
+  transition: all 0.8s;
 }
 
 .hide-list-container {
   transition: all 0.8s;
-  left: -1000px;
+  left: -1500px;
 }
 
 .list-items {
@@ -103,7 +103,6 @@
 .active-link {
   color: #a97959;
 }
-
 
 @media (min-width: 1080px) {
   .navbar-container {
