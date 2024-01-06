@@ -48,10 +48,9 @@
 
 _::-webkit-full-page-media,
 _:future,
-:root .safari_only {
+:root .hero-background-wrapper {
 
-  .hero-background-wrapper {
-    background-attachment: initial;
-  }
+  background-attachment: initial;
+
 
 }
