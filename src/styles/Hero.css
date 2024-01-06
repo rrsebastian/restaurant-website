@@ -2,6 +2,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .hero-container {
@@ -42,4 +43,15 @@
   .hero-container h2 {
     font-size: 40px;
   }
+}
+
+
+_::-webkit-full-page-media,
+_:future,
+:root .safari_only {
+
+  .hero-background-wrapper {
+    background-attachment: initial;
+  }
+
 }
