@@ -142,3 +142,9 @@ _:future,
 :root .reservations-container {
   background-attachment: initial;
 }
+
+_::-webkit-full-page-media,
+_:future,
+:root .confirmation-container {
+  background-attachment: initial;
+}
