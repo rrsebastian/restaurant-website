@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
   Routes,
   Route,
@@ -13,7 +13,7 @@ import { AppProvider } from "./AppContext.jsx";
 import "./App.css";
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Home />,
