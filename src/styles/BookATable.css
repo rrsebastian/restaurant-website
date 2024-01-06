@@ -1,6 +1,6 @@
 .reservations-container {
   background: url("../assets/bg-0008.jpg");
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,7 +11,6 @@
   text-align: center;
   padding: 30px;
   padding-top: 130px;
-  -webkit-background-attachment: scroll;
 }
 
 .reservations-container h1,
@@ -100,7 +99,6 @@ input:focus {
 @media (min-width: 720px) {
 
   .reservations-container {
-    height: initial;
     padding: 70px 0px;
   }
 
@@ -134,5 +132,14 @@ input:focus {
   select {
     padding: 20px 15px;
 
+  }
+}
+
+
+@media not all and (min-resolution:.001dpcm) {
+  @supports (-webkit-appearance:none) {
+    .reservations-container {
+      background-attachment: initial;
+    }
   }
 }
