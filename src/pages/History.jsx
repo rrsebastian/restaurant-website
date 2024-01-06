@@ -26,7 +26,7 @@ function History() {
   useEffect(() => {
     // Use the navigate function to redirect when shouldRedirect is true
     if (shouldRedirect) {
-      navigate("/history");
+      navigate("/");
     }
   }, [shouldRedirect, navigate]);
 
