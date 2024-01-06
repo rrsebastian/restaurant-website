@@ -137,14 +137,8 @@ input:focus {
 
 
 
-@media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance:none) {
-
-    .reservations-container {
-      background-attachment: initial;
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-  }
+_::-webkit-full-page-media,
+_:future,
+:root .reservations-container {
+  background-attachment: initial;
 }

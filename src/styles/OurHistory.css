@@ -169,3 +169,9 @@
     margin-top: 16px;
   }
 }
+
+_::-webkit-full-page-media,
+_:future,
+:root .our-history-container {
+  background-attachment: initial;
+}
