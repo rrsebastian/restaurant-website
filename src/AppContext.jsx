@@ -11,7 +11,6 @@ export const useAppContext = () => {
 };
 
 export const AppProvider = ({ children }) => {
-  // Get the currentPage from localStorage on initial load
   const initialPage = localStorage.getItem("currentPage") || "home";
   const [currentPage, setCurrentPage] = useState(initialPage);
 
@@ -19,7 +18,6 @@ export const AppProvider = ({ children }) => {
     setCurrentPage(item);
   };
 
-  // Update localStorage whenever currentPage changes
   useEffect(() => {
     localStorage.setItem("currentPage", currentPage);
   }, [currentPage]);
