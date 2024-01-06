@@ -26,15 +26,19 @@ function OurMenu() {
       </div>
 
       <div className="food-menus">
-        <Link onClick={() => handleClick("menu")} to="/menu">
-          <div className="dessert-menu-background">
-            <h1>DESSERT MENU</h1>
-          </div>
+        <Link
+          onClick={() => handleClick("menu")}
+          to="/menu"
+          className="dessert-menu-background"
+        >
+          <h1>DESSERT MENU</h1>
         </Link>
-        <Link onClick={() => handleClick("menu")} to="/menu">
-          <div className="dining-menu-background">
-            <h1>DINING MENU</h1>
-          </div>
+        <Link
+          onClick={() => handleClick("menu")}
+          to="/menu"
+          className="dining-menu-background"
+        >
+          <h1>DINING MENU</h1>
         </Link>
       </div>
     </div>
