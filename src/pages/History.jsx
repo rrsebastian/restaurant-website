@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Hero from "../Components/Hero";
 import backgroundImage from "../assets/bg-00011.jpg";
 import Navbar from "../Components/Navbar";
@@ -6,9 +6,10 @@ import TheFounder from "../Components/TheFounder";
 import Timeline from "../Components/Timeline";
 import BookATable from "../Components/BookATable";
 import Footer from "../Components/Footer";
-import { Redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function History() {
+  const navigate = useNavigate();
   const [shouldRedirect, setShouldRedirect] = useState(false);
   const bookATableRef = useRef();
 
@@ -17,13 +18,17 @@ function History() {
       window.performance.getEntriesByType("navigation")[0].type === "reload";
 
     if (isRefreshed && window.location.pathname === "/history") {
+      // If refreshed and on /history, set shouldRedirect to true
       setShouldRedirect(true);
     }
   }, []);
 
-  if (shouldRedirect) {
-    return <Redirect to="/history" />;
-  }
+  useEffect(() => {
+    // Use the navigate function to redirect when shouldRedirect is true
+    if (shouldRedirect) {
+      navigate("/history");
+    }
+  }, [shouldRedirect, navigate]);
 
   return (
     <div>
